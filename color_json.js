@@ -1,5 +1,3 @@
-// 20170416212110
-// http://gauth.fr/wp-content/uploads/2011/09/color_classif/dataset.js
 
 [
   {
