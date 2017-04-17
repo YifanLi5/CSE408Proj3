@@ -2,7 +2,7 @@ import json
 from collections import namedtuple
 
 filepath = "./color_json.js"
-rgb_tuple = namedtuple("rgb_tuple", "r g b")
+rgb_tuple = namedtuple("rgb_tuple", ["r", "g", "b"])
 
 def parse():
     with open(filepath) as raw_data:
@@ -15,6 +15,6 @@ def parse():
         rgb_to_color_dict[tup] = label
     return rgb_to_color_dict
 
-dict = parse()
-test_tup = rgb_tuple(r = 240, g = 248, b = 255)
-print(dict[test_tup])
+# dict = parse()
+# test_tup = rgb_tuple(r = 240, g = 248, b = 255)
+# print(dict[test_tup])
