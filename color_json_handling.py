@@ -1,7 +1,7 @@
 import json
 from collections import namedtuple
 
-filepath = "./color_json.js"
+filepath = "./color_json.json"
 rgb_tuple = namedtuple("rgb_tuple", ["r", "g", "b"])
 
 def parse():

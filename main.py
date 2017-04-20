@@ -15,7 +15,7 @@ def main():
             pixels[i][j] = color_json_handling.rgb_tuple(*pixels[i][j])
 
     rgb_to_color_dict = color_json_handling.parse()
-    test_tup = rgb_tuple(r=33, g=80, b=79)
+    test_tup = rgb_tuple(r=84, g=139, b=91)
 
     result_tup = nearest_neighbor.first_nn(test_tup, rgb_to_color_dict)
     color = rgb_to_color_dict[result_tup]
