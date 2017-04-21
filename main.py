@@ -1,6 +1,8 @@
 from PIL import Image
+from sys import argv
 import color_json_handling
 import nearest_neighbor
+import emoji
 from color_json_handling import rgb_tuple
 path = "./TestImages/magikarp.jpg"
 
@@ -21,6 +23,13 @@ def main():
     color = rgb_to_color_dict[result_tup]
     print(result_tup)
     print(color)
+    test = emoji.emojize('Python is :thumbsup:', use_aliases=True)
+
+    f = open("file.txt","wb")
+    f.write(test.encode('utf-8'))
+    f.close()
+
+
 
 
 
