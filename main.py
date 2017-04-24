@@ -29,11 +29,13 @@ def main():
     row1 = [white, white, black, black]
     row2 = [black, black, white, white]
     row3 = [white, white, white, white]
+    row4 = [black, black, white, black]
     test = []
     test.append(row0)
     test.append(row1)
     test.append(row2)
     test.append(row3)
+    test.append(row4)
 
     result = color_averaging.calc_avg_img_values(test, 2)
 
