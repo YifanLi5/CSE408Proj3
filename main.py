@@ -1,8 +1,7 @@
 from PIL import Image
 import color_json_handling
 import nearest_neighbor
-import emoji
-import image_processing
+import color_averaging
 from color_json_handling import rgb_tuple
 path = "./TestImages/magikarp.jpg"
 
@@ -36,7 +35,7 @@ def main():
     test.append(row2)
     test.append(row3)
 
-    result = image_processing.calc_avg_img_values(test, 2)
+    result = color_averaging.calc_avg_img_values(test, 2)
 
     pretty_print(test)
     print('\n')
