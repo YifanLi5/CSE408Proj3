@@ -2,7 +2,7 @@ import json
 from collections import namedtuple
 
 filepath = "./emoji_list.json"
-rgb_tuple = namedtuple("rgb_tuple", ["r", "g", "b"])
+rgb_tuple = namedtuple("rgb_tuple", ["r", "g", "b", "a"])
 
 def parse():
     with open(filepath) as raw_data:
@@ -10,11 +10,8 @@ def parse():
 
     rgb_to_color_dict = {}
     for rgb_item in json_data:
-        tup = rgb_tuple(r = rgb_item["x"], g = rgb_item["y"], b = rgb_item["z"])
+        tup = rgb_tuple(r = rgb_item["x"], g = rgb_item["y"], b = rgb_item["z"], a = -1)
         label = rgb_item["label"]
         rgb_to_color_dict[tup] = label
     return rgb_to_color_dict
 
-# dict = parse()
-# test_tup = rgb_tuple(r = 240, g = 248, b = 255)
-# print(dict[test_tup])
