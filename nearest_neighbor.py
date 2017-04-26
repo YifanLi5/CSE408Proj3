@@ -9,7 +9,7 @@ def first_nn(test_rgb_tuple, rgb_to_color_dict): #knn with k = 1
     """
 
     lowest_euclid_dist = sys.maxsize
-    nearest_tuple = rgb_tuple(-1,-1,-1)
+    nearest_tuple = rgb_tuple(-1,-1,-1,-1)
     for key in rgb_to_color_dict:
         val = _calculate_euclidian_dist(test_rgb_tuple, key)
         if val < lowest_euclid_dist:
