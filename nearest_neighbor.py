@@ -1,5 +1,5 @@
 import sys
-from color_json_handling import rgb_tuple
+from emoji_json_parsing import rgb_tuple
 
 def first_nn(test_rgb_tuple, rgb_to_color_dict): #knn with k = 1
     """
