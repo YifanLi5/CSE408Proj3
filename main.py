@@ -3,7 +3,7 @@ import emoji_json_parsing
 import nearest_neighbor
 import color_averaging
 from emoji_json_parsing import rgb_tuple
-path = "./TestImages/magikarp.jpg"
+path = "./TestImages/magikarp.png"
 
 def main():
 
