@@ -9,9 +9,10 @@ def main():
 
     im = Image.open(path)
     pixels = list(im.getdata())
-    print (im.mode == 'RGBA')
- 
+    print (im.mode)
+    print(pixels);
 
+"""
     width, height = im.size
     pixels = [pixels[i * width:(i + 1) * width] for i in range(height)]
     # for i in range(height):
@@ -42,7 +43,7 @@ def main():
     # pretty_print(test)
     # print('\n')
     # pretty_print(result)
-
+"""
 
 def pretty_print(matrix):
     s = [[str(e) for e in row] for row in matrix]
