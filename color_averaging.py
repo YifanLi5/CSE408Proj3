@@ -1,5 +1,4 @@
 from emoji_json_parsing import rgb_tuple
-from main import pretty_print
 
 def _calc_avg_pixel_line_values(rgb_line, sq_length):
     avg_pixel_line = []
