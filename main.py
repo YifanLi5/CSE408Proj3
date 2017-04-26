@@ -19,8 +19,13 @@ def main():
 
     averaged_image = calc_avg_img_values(pixels, 64)
     colors = []
-    for line in averaged_image:
+    temp = []
+    for i in range(-1, 34):
+        temp.append(str(i))
+    colors.append(temp)
+    for i,line in enumerate(averaged_image):
         color_line = []
+        color_line.append(i)
         for pix in line:
             result_tup = nearest_neighbor.first_nn(pix, rgb_to_color_dict)
             color_line.append(rgb_to_color_dict[result_tup])
