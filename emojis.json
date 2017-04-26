@@ -8,7 +8,7 @@
 {
   "x" : 248,
   "y": 234,
-  "z": 244,
+  "z": 103,
   "slack_code": ":full_moon_with_face:"
 },
 {
@@ -34,6 +34,60 @@
   "y": 234,
   "z": 204,
   "slack_code": ":facepunch::skin-tone-6:"
+},
+{
+  "x": 29,
+  "y": 131,
+  "z": 240,
+  "slack_code": ":blue_car:"
+},
+{
+  "x": 210,
+  "y": 209,
+  "z": 210,
+  "slack_code": ":koala:"
+},
+{
+  "x": 101,
+  "y": 134,
+  "z": 166,
+  "slack_code": ":cool:"
+},
+{
+  "x": 22,
+  "y": 21,
+  "z": 20,
+  "slack_code": ":8ball:"
+},
+{
+  "x": 181,
+  "y": 102,
+  "z": 209,
+  "slack_code": ":space_invader:"
+},
+{
+  "x": 233,
+  "y": 233,
+  "z": 233,
+  "slack_code": ":envelope:"
+},
+{
+  "x": 221,
+  "y": 234,
+  "z": 244,
+  "slack_code": ":snowflake:"
+},
+{
+  "x": 249,
+  "y": 237,
+  "z": 54,
+  "slack_code": ":fire:"
+},
+{
+  "x": 252,
+  "y": 108,
+  "z": 182,
+  "slack_code": ":ribbon:"
 }
 
 
