@@ -1,9 +1,9 @@
 from PIL import Image
 import emoji_json_parsing
 import nearest_neighbor
-import color_averaging
+from color_averaging import calc_avg_img_values
 from emoji_json_parsing import rgb_tuple
-path = "./TestImages/magikarp.png"
+path = "./TestImages/emoji_sheet.png"
 
 def main():
 
@@ -15,7 +15,13 @@ def main():
         for j in range(width):
             pixels[i][j] = emoji_json_parsing.rgb_tuple(*pixels[i][j])
 
-    # rgb_to_color_dict = color_json_handling.parse()
+    rgb_to_color_dict = emoji_json_parsing.parse()
+
+    averaged_image = calc_avg_img_values(pixels, 64)
+
+
+
+
     # test_tup = rgb_tuple(r=84, g=139, b=91)
     #
     # result_tup = nearest_neighbor.first_nn(test_tup, rgb_to_color_dict)
@@ -23,25 +29,7 @@ def main():
     # print(result_tup)
     # print(color)
 
-    black = rgb_tuple(r=0, g=0, b=0)
-    white = rgb_tuple(r=255, g=255, b=255)
-    row0 = [black, black, black, black]
-    row1 = [white, white, black, black]
-    row2 = [black, black, white, white]
-    row3 = [white, white, white, white]
-    row4 = [black, black, white, black]
-    test = []
-    test.append(row0)
-    test.append(row1)
-    test.append(row2)
-    test.append(row3)
-    test.append(row4)
 
-    result = color_averaging.calc_avg_img_values(test, 2)
-
-    pretty_print(test)
-    print('\n')
-    pretty_print(result)
 
 
 def pretty_print(matrix):
