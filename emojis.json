@@ -88,7 +88,18 @@
   "y": 108,
   "z": 182,
   "slack_code": ":ribbon:"
+},
+{
+  "x": 189,
+  "y": 28,
+  "z": 8,
+  "slack_code" : ":100:"
+},
+{
+  "x": 252,
+  "y": 109,
+  "z": 183,
+  "slack_code" : ":revolving_hearts:"
 }
-
 
   ]
